@@ -9,6 +9,7 @@ import { ListingComponent } from './listagem/listing/listing.component';
 import { InsertComponent } from './cadastro/insert/insert.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CrudAnimeService } from './shared/services/crud-anime.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CrudAnimeService } from './shared/services/crud-anime.service';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule, 
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [CrudAnimeService],
   bootstrap: [AppComponent]
