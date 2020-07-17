@@ -12,6 +12,11 @@ export class InsertComponent implements OnInit {
   
   constructor(private fb: FormBuilder) { }
 
+
+  get f() {
+    return this.cadastroAnime.controls;
+  }
+
   ngOnInit(): void {
     this.cadastroAnime = this.fb.group({
       title: ['', [Validators.required, Validators.minLength(1)]],
@@ -23,8 +28,10 @@ export class InsertComponent implements OnInit {
 
 
   insert(): void {
+    this.cadastroAnime.markAllAsTouched();
     if (this.cadastroAnime.invalid) {
       console.log("FORMULÁRIO INVÁLIDO!");
+      return;
     } else {
       console.log("Enviando...\n \n" + JSON.stringify(this.cadastroAnime.value, null, 4));
       this.restart();

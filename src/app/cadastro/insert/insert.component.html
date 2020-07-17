@@ -1,27 +1,44 @@
 
 
-<form [formGroup]="cadastroAnime" (ngSubmit)="insert()" (ngReset)="restart()">
+<div class="container">
+
+  <h1>Welcome, User! Submit your anime:</h1>
+<form [formGroup]="cadastroAnime" novalidate (ngSubmit)="insert()" (ngReset)="restart()">
+
+  <div class="row">
     <mat-form-field class="example-full-width">
-      <mat-label>Title</mat-label>
+      <mat-label>Title*</mat-label>
       <input name="title" formControlName="title" matInput placeholder="Title of Anime">
+      <mat-error  *ngIf="cadastroAnime.touched && f.director.errors?.required">Please insert the title of the anime</mat-error>
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
-        <mat-label>Number of episodes</mat-label>
+        <mat-label>Number of episodes*</mat-label>
         <input name="episodes" formControlName="episodes" matInput placeholder="">
+        <mat-error  *ngIf="cadastroAnime.touched && f.director.errors?.required">Please insert a valid number of episodes</mat-error>
       </mat-form-field>
 
+    </div>
+
+    <div class="row">
       <mat-form-field class="example-full-width">
-        <mat-label>Director</mat-label>
+        <mat-label>Director*</mat-label>
         <input name="director" formControlName="director" matInput placeholder="Who directed this anime">
+        <mat-error  *ngIf="cadastroAnime.touched && f.director.errors?.required">Please insert a director name</mat-error>
       </mat-form-field> 
 
       <mat-form-field class="example-full-width">
-        <mat-label>Main Studio</mat-label>
+        <mat-label>Main Studio*</mat-label>
         <input name="studio" formControlName="studio" matInput placeholder="">
+        <mat-error *ngIf="cadastroAnime.touched && f.director.errors?.required">Please insert the main studio</mat-error>
       </mat-form-field> 
 
+    </div>
+
+    <div class="row buttons">
       <button type="submit" mat-raised-button color="primary">Insert</button>
       <button type="reset" mat-raised-button color="warning">Reset Form</button>
+    </div>
     
   </form>
+</div>

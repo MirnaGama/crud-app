@@ -8,6 +8,7 @@ import { MaterialModule } from './shared/material.module';
 import { ListingComponent } from './listagem/listing/listing.component';
 import { InsertComponent } from './cadastro/insert/insert.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CrudAnimeService } from './shared/services/crud-anime.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule, 
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [CrudAnimeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
