@@ -3,14 +3,25 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './shared/material.module';
+import { ListingComponent } from './listagem/listing/listing.component';
+import { InsertComponent } from './cadastro/insert/insert.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListingComponent,
+    InsertComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    FormsModule, 
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

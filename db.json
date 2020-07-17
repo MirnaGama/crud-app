@@ -1,0 +1,38 @@
+{
+  "animes": [ {
+    "id": 1,
+    "title": "Cowboy Bebop",
+    "episodes": 26,
+    "director": "Shinichiro Watanabe",
+    "studio": "Sunrise",
+    "img_url": "https://cdn.myanimelist.net/images/anime/4/19644l.jpg"
+  },
+
+  {
+    "id": 2,
+    "title": "Revolutionary Girl Utena",
+    "episodes": 39,
+    "director": "Kunihiko Ikuhara",
+    "studio": "J.C.Staff",
+    "img_url": "https://cdn.myanimelist.net/images/anime/1078/95285l.jpg"
+  },
+
+  {
+    "id": 3,
+    "title": "The Tatami Galaxy",
+    "episodes": 11,
+    "director": "Masaaki Yuasa",
+    "studio": "Madhouse",
+    "img_url": "https://cdn.myanimelist.net/images/anime/10/50457l.jpg"
+  },
+
+  {
+    "id": 4,
+    "title": "Dear Brother",
+    "episodes": 39,
+    "director": "Osamu Dezaki",
+    "studio": "Tezuka Productions",
+    "img_url": "https://cdn.myanimelist.net/images/anime/12/18531l.jpg"
+  }
+  ]
+}

@@ -1,0 +1,27 @@
+
+
+<form [formGroup]="cadastroAnime" (ngSubmit)="insert()" (ngReset)="restart()">
+    <mat-form-field class="example-full-width">
+      <mat-label>Title</mat-label>
+      <input name="title" formControlName="title" matInput placeholder="Title of Anime">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Number of episodes</mat-label>
+        <input name="episodes" formControlName="episodes" matInput placeholder="">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Director</mat-label>
+        <input name="director" formControlName="director" matInput placeholder="Who directed this anime">
+      </mat-form-field> 
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Main Studio</mat-label>
+        <input name="studio" formControlName="studio" matInput placeholder="">
+      </mat-form-field> 
+
+      <button type="submit" mat-raised-button color="primary">Insert</button>
+      <button type="reset" mat-raised-button color="warning">Reset Form</button>
+    
+  </form>
