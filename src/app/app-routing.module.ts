@@ -5,7 +5,7 @@ import { InsertComponent } from './cadastro/insert/insert.component';
 
 
 const routes: Routes = [
-  {path: 'inicio', component: ListingComponent},
+  {path: '', component: ListingComponent},
   {path: 'cadastro', component: InsertComponent}
 ];
 

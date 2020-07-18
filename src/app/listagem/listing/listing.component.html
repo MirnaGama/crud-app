@@ -1,1 +1,38 @@
+<div class="container search-input">
+<form [formGroup]="filtroListagem" novalidate>
 
+    <mat-form-field class="example-full-width">
+      <mat-label>Title</mat-label>
+      <input name="title" formControlName="title" matInput>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Studio</mat-label>
+      <input name="studio" formControlName="studio" matInput>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Director</mat-label>
+      <input name="director" formControlName="director" matInput>
+    </mat-form-field>
+
+    </form>
+  </div>
+
+<div class="row cards">
+<mat-card class="home-card" *ngFor="let anime of animeList">
+    <mat-card-header>
+    <mat-card-title>{{anime.title}}</mat-card-title>
+    </mat-card-header>
+
+  <!--  <img mat-card-image src="{{anime.img_url}}}"> -->
+    <mat-card-content>
+      <h3><strong>Episodes:</strong> {{anime.episodes}}</h3>
+      <h3><strong>Director:</strong> {{anime.director}}</h3>
+      <h3><strong>Studio:</strong> {{anime.studio}}</h3>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>EDIT</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

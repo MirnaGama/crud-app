@@ -37,7 +37,32 @@
       "episodes": "24",
       "director": "Hiroshi Hamasaki",
       "studio": "White Fox",
-      "id": 5
+      "id": 5,
+      "img_url": "https://animehunch.com/wp-content/uploads/2020/02/steinsgte.jpg"
+    },
+    {
+      "title": "Sarazanmai",
+      "episodes": "11",
+      "director": "Kunihiko Ikuhara",
+      "studio": "MAPPA",
+      "id": 6,
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/6/6c/Sarazanmai.animekeyvisual.jpg"
+    },
+    {
+      "title": "Mawaru Penguindrum",
+      "episodes": "24",
+      "director": "Kunihiko Ikuhara",
+      "studio": "Brain's Base",
+      "id": 7,
+      "img_url": "https://media.kitsu.io/anime/poster_images/6318/large.jpg"
+    },
+    {
+      "title": "Yurikuma Arashi",
+      "episodes": "12",
+      "director": "Kunihiko Ikuhara",
+      "studio": "Silver Link.",
+      "id": 8,
+      "img_url": "https://i0.hdslb.com/bfs/bangumi/449fec256df0d724d3ff38c784848844e9b1cf26.jpg"
     }
   ]
 }

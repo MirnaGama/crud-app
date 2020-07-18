@@ -1,0 +1,22 @@
+.home-card {
+  width: 300px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.mat-card-image {
+  height: 400px;
+}
+
+.cards {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.search-input {
+  background-color: white;
+  height: auto;
+  width: 650px;
+  padding-left: 50px;
+  border-radius: 5px;
+}

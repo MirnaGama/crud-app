@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { Anime } from 'src/app/shared/models';
 import { CrudAnimeService } from 'src/app/shared/services/crud-anime.service';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-insert',
@@ -32,7 +33,6 @@ export class InsertComponent implements OnInit {
   submit(): void {
     this.cadastroAnime.markAllAsTouched();
     if (this.cadastroAnime.invalid) {
-      console.log("FORMULÁRIO INVÁLIDO!");
       return;
     } else {
       console.log("Enviando...\n \n" + JSON.stringify(this.cadastroAnime.value, null, 4));
@@ -50,13 +50,15 @@ export class InsertComponent implements OnInit {
 
   /// CRUD ////
   private insert(anime: Anime): void {
-    this.animeService.insert(anime).subscribe(data=> {
-      console.log(data);
+    this.animeService.insert(anime).subscribe(()=> {
+
+      Swal.fire({title: "Success!", icon: 'success'});
     }, 
     err => {
-      console.log("ERRO: "+err);
+      Swal.fire({title: "Error!", icon: 'error'});
     })
+  }
+
   }
   
 
-}
