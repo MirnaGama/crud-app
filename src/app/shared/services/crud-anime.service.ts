@@ -39,4 +39,12 @@ export class CrudAnimeService {
 
     return this.http.get<Anime[]>(this.hostUrl, {params: httpParams});
   }
+
+  searchById(id: number): Observable<Anime> {
+    return this.http.get<Anime>(this.hostUrl + id);
+  }
+
+  delete(id:number): Observable<void> {
+    return this.http.delete<void>(this.hostUrl + id);
+  }
 }

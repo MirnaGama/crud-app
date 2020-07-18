@@ -10,12 +10,14 @@ import { InsertComponent } from './cadastro/insert/insert.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CrudAnimeService } from './shared/services/crud-anime.service';
 import { HttpClientModule } from '@angular/common/http';
+import { DetailComponent } from './visualizacao/detail/detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListingComponent,
-    InsertComponent
+    InsertComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

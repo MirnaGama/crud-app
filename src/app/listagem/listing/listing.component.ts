@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+
 import { debounceTime } from 'rxjs/operators';
 
 import { Anime } from 'src/app/shared/models';
 import { CrudAnimeService } from 'src/app/shared/services/crud-anime.service';
+import Swal from 'sweetalert2';
+
 
 
 
@@ -21,7 +25,7 @@ export class ListingComponent implements OnInit {
   director: string = '';
   studio: string = '';
 
-  constructor(private animeService: CrudAnimeService, private fb: FormBuilder) {
+  constructor(private animeService: CrudAnimeService, private fb: FormBuilder, private router: Router) {
    }
 
   ngOnInit() {
@@ -52,6 +56,38 @@ export class ListingComponent implements OnInit {
    this.selectAll();
 
   }
+
+  detailAnime(id: number) {
+    this.router.navigateByUrl('/' + id);
+  }
+
+  delete(id: number) {
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.value) {
+        this.animeService.delete(id).subscribe(() => {
+
+          Swal.fire(
+            'Deleted!',
+            'Your file has been deleted.',
+            'success'
+          )
+
+          this.router.navigateByUrl('');
+        })
+
+      }
+    })
+    
+  }
+
 
   private selectAll() {
     return this.animeService.selectAll().subscribe((animeList: Anime[]) => this.animeList = animeList);

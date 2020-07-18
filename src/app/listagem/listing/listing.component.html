@@ -33,7 +33,11 @@
     </mat-card-content>
     <mat-card-actions>
       <button mat-button>EDIT</button>
-      <button mat-button>SEE MORE</button>
+      <button mat-button (click)="detailAnime(anime.id)">SEE MORE</button>
+      <button mat-button color="warn" (click)="delete(anime.id)"><span class="material-icons">
+        delete_forever
+        </span>
+        </button>
     </mat-card-actions>
   </mat-card>
 </div>

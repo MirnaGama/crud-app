@@ -1,0 +1,14 @@
+<mat-list *ngIf="anime">
+    <mat-list-item><h1>{{anime.title}}</h1></mat-list-item>
+    <mat-list-item>Number of episodes: {{anime.episodes}}</mat-list-item>
+    <mat-list-item>Director: {{anime.director}}</mat-list-item>
+    <mat-list-item>Studio: {{anime.studio}}</mat-list-item>
+
+    <mat-list-item><button mat-button>EDIT</button>
+        <button mat-button color="warn" (click)="delete(anime.id)"><span class="material-icons">
+          delete_forever
+          </span>
+          </button></mat-list-item>
+   </mat-list>
+
+   <mat-list *ngIf="!anime">Error 404! Anime not found!</mat-list>
