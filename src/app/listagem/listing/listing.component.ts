@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { debounceTime } from 'rxjs/operators';
+
 import { Anime } from 'src/app/shared/models';
 import { CrudAnimeService } from 'src/app/shared/services/crud-anime.service';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
+
 
 @Component({
   selector: 'app-listing',
@@ -27,19 +31,19 @@ export class ListingComponent implements OnInit {
      director: ['']
    })
 
-   this.filtroListagem.get('title').valueChanges.subscribe((val: string) => {
+   this.filtroListagem.get('title').valueChanges.pipe(debounceTime(500)).subscribe((val: string) => {
     this.title = val;
 
     this.searchAnime();
    });
 
-   this.filtroListagem.get('director').valueChanges.subscribe((val: string) => {
+   this.filtroListagem.get('director').valueChanges.pipe(debounceTime(500)).subscribe((val: string) => {
      this.director = val;
 
      this.searchAnime();
    })
 
-   this.filtroListagem.get('studio').valueChanges.subscribe((val: string) => {
+   this.filtroListagem.get('studio').valueChanges.pipe(debounceTime(500)).subscribe((val: string) => {
      this.studio = val;
 
      this.searchAnime();
