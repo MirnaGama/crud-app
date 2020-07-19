@@ -58,7 +58,11 @@ export class ListingComponent implements OnInit {
   }
 
   detailAnime(id: number) {
-    this.router.navigateByUrl('/' + id);
+    this.router.navigateByUrl('anime/' + id);
+  }
+
+  edit(id: number) {
+    this.router.navigateByUrl('anime/cadastro/'+id);
   }
 
   delete(id: number) {
@@ -80,7 +84,7 @@ export class ListingComponent implements OnInit {
             'success'
           )
 
-          this.router.navigateByUrl('');
+          this.router.navigateByUrl('anime');
         })
 
       }

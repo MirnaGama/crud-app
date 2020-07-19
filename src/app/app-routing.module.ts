@@ -7,8 +7,9 @@ import { DetailComponent } from './visualizacao/detail/detail.component';
 
 const routes: Routes = [
   {path: '', component: ListingComponent},
-  {path: 'cadastro', component: InsertComponent},
-  {path: ':id', component: DetailComponent}
+  {path: 'anime', component: ListingComponent},
+  {path: 'anime/cadastro', children: [{path: '', component: InsertComponent}, {path: ':id', component: InsertComponent}]},
+  {path: 'anime/:id', component: DetailComponent}
 ];
 
 @NgModule({

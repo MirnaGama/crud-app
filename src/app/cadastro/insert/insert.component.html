@@ -3,7 +3,7 @@
 <div class="container">
 
   <h1>Welcome, User! Submit your anime:</h1>
-<form [formGroup]="cadastroAnime" novalidate (ngSubmit)="submit()" (ngReset)="restart()">
+<form [formGroup]="cadastroAnime" novalidate (ngSubmit)="submit()" (ngReset)="restart()" *ngIf="this.cadastroAnime">
 
   <div class="row">
     <mat-form-field class="example-full-width">
@@ -37,7 +37,8 @@
 
     <div class="row buttons">
       <button type="submit" mat-raised-button color="primary">Insert</button>
-      <button type="reset" mat-raised-button color="warning">Reset Form</button>
+      <button type="reset" mat-raised-button color="warn">Reset Form</button>
+      <button (click)="return()" mat-raised-button>Return main screen</button>
     </div>
     
   </form>

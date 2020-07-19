@@ -47,4 +47,8 @@ export class CrudAnimeService {
   delete(id:number): Observable<void> {
     return this.http.delete<void>(this.hostUrl + id);
   }
+
+  update(anime: Anime): Observable<Anime> {
+    return this.http.put<Anime>(this.hostUrl + anime.id, anime);
+  }
 }

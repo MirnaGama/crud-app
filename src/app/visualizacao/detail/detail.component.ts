@@ -35,11 +35,19 @@ export class DetailComponent implements OnInit {
     }).then((result) => {
       if (result.value) {
         this.animeService.delete(id).subscribe(() => 
-          this.router.navigateByUrl(''))
+          this.router.navigateByUrl('anime'))
 
       }
     })
     
+  }
+
+  edit(id: number) {
+    this.router.navigateByUrl('anime/cadastro/'+id);
+  }
+
+  return() {
+    this.router.navigateByUrl('anime');
   }
 
 

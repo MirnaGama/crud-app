@@ -9,12 +9,11 @@
       "img_url": "https://cdn.myanimelist.net/images/anime/4/19644l.jpg"
     },
     {
-      "id": 3,
       "title": "The Tatami Galaxy",
-      "episodes": 11,
+      "episodes": "11",
       "director": "Masaaki Yuasa",
       "studio": "Madhouse",
-      "img_url": "https://cdn.myanimelist.net/images/anime/10/50457l.jpg"
+      "id": 3
     },
     {
       "id": 4,

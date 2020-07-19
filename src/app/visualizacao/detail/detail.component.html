@@ -4,11 +4,13 @@
     <mat-list-item>Director: {{anime.director}}</mat-list-item>
     <mat-list-item>Studio: {{anime.studio}}</mat-list-item>
 
-    <mat-list-item><button mat-button>EDIT</button>
+    <mat-list-item><button mat-button color="primary" (click)="edit(anime.id)">EDIT</button>
         <button mat-button color="warn" (click)="delete(anime.id)"><span class="material-icons">
           delete_forever
           </span>
-          </button></mat-list-item>
+          </button>
+          <button mat-button (click)="return()">Return Main Screen</button>
+        </mat-list-item>
    </mat-list>
 
    <mat-list *ngIf="!anime">Error 404! Anime not found!</mat-list>
