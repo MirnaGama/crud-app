@@ -9,11 +9,20 @@
       "img_url": "https://cdn.myanimelist.net/images/anime/4/19644l.jpg"
     },
     {
+      "id": 2,
+      "title": "Revolutionary Girl Utena",
+      "episodes": 39,
+      "director": "Kunihiko Ikuhara",
+      "studio": "J.C.Staff",
+      "img_url": "https://cdn.myanimelist.net/images/anime/1078/95285l.jpg"
+    },
+    {
       "title": "The Tatami Galaxy",
       "episodes": "11",
       "director": "Masaaki Yuasa",
       "studio": "Madhouse",
-      "id": 3
+      "id": 3,
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/2/2a/Tatami_Galaxy_cover.png"
     },
     {
       "id": 4,
@@ -53,7 +62,39 @@
       "director": "Kunihiko Ikuhara",
       "studio": "Silver Link.",
       "id": 8,
-      "img_url": "https://i0.hdslb.com/bfs/bangumi/449fec256df0d724d3ff38c784848844e9b1cf26.jpg"
+      "img_url": "https://www.otakutale.com/wp-content/uploads/2014/11/Yuri-Kuma-Arashi-Visual.jpg"
+    },
+    {
+      "title": "Tomorrow's Joe",
+      "episodes": "79",
+      "director": "Osamu Dezaki",
+      "studio": "Mushi Production",
+      "id": 9,
+      "img_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx2402-hbo1SbfcM5hm.jpg"
+    },
+    {
+      "title": "Hunter x Hunter (2011)",
+      "episodes": "148",
+      "director": "Hiroshi Koujina",
+      "studio": "Madhouse",
+      "id": 10,
+      "img_url": "https://cdn.myanimelist.net/images/anime/1639/92662l.jpg"
+    },
+    {
+      "title": "Devilman Crybaby",
+      "episodes": "10",
+      "director": "Masaaki Yuasa",
+      "studio": "Science SARU",
+      "id": 11,
+      "img_url": "https://cdn.myanimelist.net/images/anime/2/89973l.jpg"
+    },
+    {
+      "title": "Death Parade",
+      "episodes": "12",
+      "director": "Yuzuru Tachikawa",
+      "studio": "Madhouse",
+      "id": 12,
+      "img_url": "https://cdn.myanimelist.net/images/anime/5/71553l.jpg"
     }
   ]
 }

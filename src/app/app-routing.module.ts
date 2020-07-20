@@ -6,8 +6,8 @@ import { DetailComponent } from './visualizacao/detail/detail.component';
 
 
 const routes: Routes = [
-  {path: '', component: ListingComponent},
-  {path: 'anime', component: ListingComponent},
+  {path: '', redirectTo: 'anime/home', pathMatch: 'full'},
+  {path: 'anime/home', component: ListingComponent},
   {path: 'anime/cadastro', children: [{path: '', component: InsertComponent}, {path: ':id', component: InsertComponent}]},
   {path: 'anime/:id', component: DetailComponent}
 ];

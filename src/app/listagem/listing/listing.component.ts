@@ -84,7 +84,7 @@ export class ListingComponent implements OnInit {
             'success'
           )
 
-          this.router.navigateByUrl('anime');
+          this.router.navigateByUrl('anime/home');
         })
 
       }

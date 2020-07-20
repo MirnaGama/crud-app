@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+.tabs {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 30px;
+    position: flex;
+    font-family: 'Rowdies', cursive;
+}
+
+.tab {
+    color: black;
+    padding: 20px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.tab:hover {
+    color: white;
+    background-color: #2a3c77;
+}
+
+.active {
+    color: white;
+    background-color: #2a3c77;
+}
+
+.panel {
+    background-color: white !important;
+    min-height: 800px;
+    padding-bottom: 30px;
+}

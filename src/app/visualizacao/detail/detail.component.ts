@@ -35,7 +35,7 @@ export class DetailComponent implements OnInit {
     }).then((result) => {
       if (result.value) {
         this.animeService.delete(id).subscribe(() => 
-          this.router.navigateByUrl('anime'))
+          this.router.navigateByUrl('anime/home'))
 
       }
     })
@@ -47,7 +47,7 @@ export class DetailComponent implements OnInit {
   }
 
   return() {
-    this.router.navigateByUrl('anime');
+    this.router.navigateByUrl('anime/home');
   }
 
 

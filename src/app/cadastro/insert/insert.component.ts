@@ -60,7 +60,7 @@ export class InsertComponent implements OnInit {
   }
 
   return() {
-    this.router.navigateByUrl('anime');
+    this.router.navigateByUrl('anime/home');
   }
 
 
@@ -89,7 +89,7 @@ export class InsertComponent implements OnInit {
 
       Swal.fire({title: "Success!", icon: 'success'});
 
-      this.router.navigateByUrl("anime")
+      this.router.navigateByUrl("anime/home")
     }, 
     err => {
       Swal.fire({title: "Error!", icon: 'error'});
