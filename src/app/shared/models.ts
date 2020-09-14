@@ -4,5 +4,7 @@ export interface Anime {
     episodes: number;
     director: string;
     studio: string;
-    img_url?: string
+    img_url?: string;
+    type: string;
+    status: string;
 }

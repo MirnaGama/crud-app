@@ -1,4 +1,4 @@
-<div class="container search-input">
+<div class="container search-input" *ngIf="animeList">
 <form [formGroup]="filtroListagem" novalidate>
 
     <mat-form-field class="example-full-width">
@@ -19,7 +19,7 @@
     </form>
   </div>
 
-<div class="row cards">
+<div class="row cards" *ngIf="animeList">
 <mat-card class="home-card" *ngFor="let anime of animeList">
     <mat-card-header>
     <mat-card-title>{{anime.title}}</mat-card-title>
@@ -40,4 +40,10 @@
         </button>
     </mat-card-actions>
   </mat-card>
+</div>
+
+
+<div class="error" *ngIf="!animeList">
+  <p class="error-title"><strong>Server Connection Error</strong></p>
+  <p class="error-body">Something went wrong!</p>
 </div>

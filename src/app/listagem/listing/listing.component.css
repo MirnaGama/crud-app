@@ -25,3 +25,18 @@
   padding-left: 50px;
   padding-top: 20px;
 }
+
+.error {
+  padding-top: 200px;
+  color: #2a3c77;
+  text-align: center;
+}
+
+.error-title {
+  font-size: 70px;
+  margin-bottom: 55px;
+}
+
+.error-body {
+  font-size: 50px;
+}

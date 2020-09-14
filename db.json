@@ -1,36 +1,43 @@
 {
   "animes": [
     {
-      "id": 1,
       "title": "Cowboy Bebop",
       "episodes": 26,
       "director": "Shinichiro Watanabe",
       "studio": "Sunrise",
-      "img_url": "https://cdn.myanimelist.net/images/anime/4/19644l.jpg"
+      "img_url": "https://cdn.myanimelist.net/images/anime/4/19644l.jpg",
+      "type": "TV",
+      "status": "Finished Airing",
+      "id": 1
     },
     {
-      "id": 2,
       "title": "Revolutionary Girl Utena",
       "episodes": 39,
       "director": "Kunihiko Ikuhara",
       "studio": "J.C.Staff",
-      "img_url": "https://cdn.myanimelist.net/images/anime/1078/95285l.jpg"
+      "img_url": "https://cdn.myanimelist.net/images/anime/1078/95285l.jpg",
+      "type": "TV",
+      "status": "Finished Airing",
+      "id": 2
     },
     {
       "title": "The Tatami Galaxy",
       "episodes": "11",
       "director": "Masaaki Yuasa",
       "studio": "Madhouse",
-      "id": 3,
-      "img_url": "https://upload.wikimedia.org/wikipedia/en/2/2a/Tatami_Galaxy_cover.png"
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/2/2a/Tatami_Galaxy_cover.png",
+      "type": "TV",
+      "status": "Finished Airing",
+      "id": 3
     },
     {
-      "id": 4,
       "title": "Dear Brother",
       "episodes": 39,
       "director": "Osamu Dezaki",
       "studio": "Tezuka Productions",
-      "img_url": "https://cdn.myanimelist.net/images/anime/12/18531l.jpg"
+      "img_url": "https://cdn.myanimelist.net/images/anime/12/18531l.jpg",
+      "type": "TV",
+      "id": 4
     },
     {
       "title": "Steins;Gate",
@@ -53,8 +60,10 @@
       "episodes": "24",
       "director": "Kunihiko Ikuhara",
       "studio": "Brain's Base",
-      "id": 7,
-      "img_url": "https://media.kitsu.io/anime/poster_images/6318/large.jpg"
+      "img_url": "https://media.kitsu.io/anime/poster_images/6318/large.jpg",
+      "type": "TV",
+      "status": "Finished Airing",
+      "id": 7
     },
     {
       "title": "Yurikuma Arashi",
@@ -77,16 +86,18 @@
       "episodes": "148",
       "director": "Hiroshi Koujina",
       "studio": "Madhouse",
-      "id": 10,
-      "img_url": "https://cdn.myanimelist.net/images/anime/1639/92662l.jpg"
+      "img_url": "https://cdn.myanimelist.net/images/anime/1639/92662l.jpg",
+      "type": "TV",
+      "id": 10
     },
     {
       "title": "Devilman Crybaby",
       "episodes": "10",
       "director": "Masaaki Yuasa",
       "studio": "Science SARU",
-      "id": 11,
-      "img_url": "https://cdn.myanimelist.net/images/anime/2/89973l.jpg"
+      "img_url": "https://cdn.myanimelist.net/images/anime/2/89973l.jpg",
+      "type": "ONA",
+      "id": 11
     },
     {
       "title": "Death Parade",
@@ -95,6 +106,33 @@
       "studio": "Madhouse",
       "id": 12,
       "img_url": "https://cdn.myanimelist.net/images/anime/5/71553l.jpg"
+    },
+    {
+      "title": "Paranoia Agent",
+      "episodes": "13",
+      "director": "Satoshi Kon",
+      "studio": "Madhouse",
+      "img_url": "https://cdn.myanimelist.net/images/anime/7/10240l.jpg",
+      "id": 13
+    },
+    {
+      "title": "Legend of the Galactic Heroes",
+      "episodes": "110",
+      "director": "Noboru Ishiguro",
+      "studio": "Artland",
+      "img_url": "https://cdn.myanimelist.net/images/anime/8/9568l.jpg",
+      "type": "OVA",
+      "id": 14
+    },
+    {
+      "title": "Mobile Suit Gundam",
+      "episodes": "43",
+      "director": "Yoshiyuki Tomino",
+      "studio": "Sunrise",
+      "img_url": "https://cdn.myanimelist.net/images/anime/5/88524l.jpg",
+      "type": "TV",
+      "status": "Finished Airing",
+      "id": 15
     }
   ]
 }

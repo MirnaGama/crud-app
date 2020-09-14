@@ -17,6 +17,24 @@
         <mat-error  *ngIf="cadastroAnime.touched && f.director.errors?.required">Please insert a valid number of episodes</mat-error>
       </mat-form-field>
 
+      <mat-form-field class="example-full-width">
+      <mat-label>Type</mat-label>
+      <mat-select formControlName="type" name="type">
+        <mat-option *ngFor="let type of types" [value]="type">
+          {{type}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Status</mat-label>
+      <mat-select formControlName="status" name="status">
+        <mat-option *ngFor="let st of status" [value]="st">
+          {{st}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
     </div>
 
     <div class="row">
@@ -30,6 +48,12 @@
         <mat-label>Main Studio*</mat-label>
         <input name="studio" formControlName="studio" matInput placeholder="">
         <mat-error *ngIf="cadastroAnime.touched && f.director.errors?.required">Please insert the main studio</mat-error>
+      </mat-form-field> 
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Image URL</mat-label>
+        <input name="img_url" formControlName="img_url" matInput placeholder="">
+        <mat-error *ngIf="cadastroAnime.touched && f.img_url.errors?.minLength">Please insert the image url</mat-error>
       </mat-form-field> 
 
     </div>

@@ -14,6 +14,10 @@ export class InsertComponent implements OnInit {
 
   cadastroAnime: FormGroup;
   id: number;
+
+  types = ['TV','OVA', 'Movie','ONA','Special'];
+  status = ['Finished Airing', 'Currently Airing', 'Not yet aired']
+
   
   constructor(private fb: FormBuilder, private router: Router,  private activRoute: ActivatedRoute, private animeService: CrudAnimeService) { }
 
@@ -69,7 +73,10 @@ export class InsertComponent implements OnInit {
       title: ['', [Validators.required, Validators.minLength(1)]],
       episodes: ['', [Validators.required, Validators.min(1)]],
       director: ['', [Validators.required, Validators.minLength(1)]],
-      studio: ['', [Validators.required, Validators.minLength(1)]]
+      studio: ['', [Validators.required, Validators.minLength(1)]],
+      img_url: ['', [Validators.minLength(5)]],
+      type: ['', [Validators.required]],
+      status: ['', [Validators.required]]
    })
   }
 
@@ -78,7 +85,10 @@ export class InsertComponent implements OnInit {
       title: [anime.title, [Validators.required, Validators.minLength(1)]],
       episodes: [anime.episodes, [Validators.required, Validators.min(1)]],
       director: [anime.director, [Validators.required, Validators.minLength(1)]],
-      studio: [anime.studio, [Validators.required, Validators.minLength(1)]]
+      studio: [anime.studio, [Validators.required, Validators.minLength(1)]],
+      img_url: [anime.img_url, [Validators.minLength(5)]],
+      type: [anime.type, [Validators.required]],
+      status: [anime.status, [Validators.required]]
    })
   }
 
@@ -87,7 +97,7 @@ export class InsertComponent implements OnInit {
 
     this.animeService.insert(anime).subscribe(()=> {
 
-      Swal.fire({title: "Success!", icon: 'success'});
+      Swal.fire({title: "Success!", text: anime.title+" successfully added to the database!", icon: 'success'});
 
       this.router.navigateByUrl("anime/home")
     }, 
@@ -104,7 +114,7 @@ export class InsertComponent implements OnInit {
 
       Swal.fire({title: "Anime updated!", icon: 'success'});
 
-      this.router.navigateByUrl("anime")
+      this.router.navigateByUrl("anime/home")
     }, 
     err => {
       Swal.fire({title: "Error!", icon: 'error'});

@@ -2,8 +2,6 @@
 
 .tabs {
     width: 100%;
-    background-color: white;
-    margin-bottom: 30px;
     position: flex;
     font-family: 'Rowdies', cursive;
 }
@@ -12,7 +10,8 @@
     color: black;
     padding: 20px;
     font-size: 30px;
-    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .tab:hover {

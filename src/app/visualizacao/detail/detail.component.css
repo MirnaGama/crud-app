@@ -1,0 +1,24 @@
+table {
+    border-collapse: separate;
+    border-spacing: 30px;
+    font-size: 20px;
+}
+
+th {
+    color: rgb(129, 126, 126);
+}
+
+.error {
+    padding-top: 200px;
+    color: #2a3c77;
+    text-align: center;
+  }
+  
+  .error-title {
+    font-size: 100px;
+    margin-bottom: 55px;
+  }
+  
+  .error-body {
+    font-size: 50px;
+  }
