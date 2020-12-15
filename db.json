@@ -44,16 +44,20 @@
       "episodes": "24",
       "director": "Hiroshi Hamasaki",
       "studio": "White Fox",
-      "id": 5,
-      "img_url": "https://animehunch.com/wp-content/uploads/2020/02/steinsgte.jpg"
+      "img_url": "https://animehunch.com/wp-content/uploads/2020/02/steinsgte.jpg",
+      "type": "TV",
+      "status": "Finished Airing",
+      "id": 5
     },
     {
       "title": "Sarazanmai",
       "episodes": "11",
       "director": "Kunihiko Ikuhara",
       "studio": "MAPPA",
-      "id": 6,
-      "img_url": "https://upload.wikimedia.org/wikipedia/en/6/6c/Sarazanmai.animekeyvisual.jpg"
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/6/6c/Sarazanmai.animekeyvisual.jpg",
+      "type": "TV",
+      "status": "Finished Airing",
+      "id": 6
     },
     {
       "title": "Mawaru Penguindrum",
@@ -88,6 +92,7 @@
       "studio": "Madhouse",
       "img_url": "https://cdn.myanimelist.net/images/anime/1639/92662l.jpg",
       "type": "TV",
+      "status": "Finished Airing",
       "id": 10
     },
     {
@@ -97,6 +102,7 @@
       "studio": "Science SARU",
       "img_url": "https://cdn.myanimelist.net/images/anime/2/89973l.jpg",
       "type": "ONA",
+      "status": "Finished Airing",
       "id": 11
     },
     {
@@ -122,6 +128,7 @@
       "studio": "Artland",
       "img_url": "https://cdn.myanimelist.net/images/anime/8/9568l.jpg",
       "type": "OVA",
+      "status": "Finished Airing",
       "id": 14
     },
     {
@@ -133,6 +140,16 @@
       "type": "TV",
       "status": "Finished Airing",
       "id": 15
+    },
+    {
+      "title": "Paradise Kiss",
+      "episodes": "12",
+      "director": "Osamu Kobayashi",
+      "studio": "Madhouse",
+      "img_url": "https://cdn.myanimelist.net/images/anime/8/24268l.jpg",
+      "type": "TV",
+      "status": "Finished Airing",
+      "id": 16
     }
   ]
 }

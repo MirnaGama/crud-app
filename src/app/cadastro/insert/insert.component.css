@@ -1,7 +1,7 @@
 .container {
     text-align: center;
     background-color: white;
-    padding-top: 30px;
+    padding-top: 100px;
 }
 
 .row {
@@ -9,9 +9,17 @@
 }
 
 mat-form-field {
+    width: 500px;
     margin-left: 30px;
+    font-size: 20px;
 }
 
 .buttons {
+    margin-left: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 20px;
     margin-left: 10px;
 }

@@ -1,34 +1,39 @@
 
-<div *ngIf="anime">
-    <img src="{{anime.img_url}}" style="height: 500px"/> 
+<div *ngIf="anime" class="detail-anime">
+    <img src="{{anime.img_url}}" class="image-anime" style="height: 500px"/> 
     
-    <h1>{{anime.title}}</h1>
-    <p>Type: {{anime.type}}</p>
-    <p>Status: {{anime.status}}</p>
-    <p>Number of episodes: {{anime.episodes}}</p>
-    <p>Director: {{anime.director}}</p>
-    <p>Studio: {{anime.studio}}</p>
+    <h1 class="title-anime">{{anime.title}}</h1> 
+  
+    <table class="info-anime-table">
 
-    <table>
       <tr>
       <th>Type</th> 
       <th>Status</th>
       <th>Episodes</th>
+      <th>Studio</th>
+      <th>Director</th>
     </tr>
       <tr>
         <td>{{anime.type}}</td>
         <td>{{anime.status}}</td>
         <td>{{anime.episodes}}</td>
+        <td>{{anime.studio}}</td>
+        <td>{{anime.director}}</td>
       </tr>
+
     </table>
 
-    <mat-list-item><button mat-button color="primary" (click)="edit(anime.id)">EDIT</button>
-        <button mat-button color="warn" (click)="delete(anime.id)"><span class="material-icons">
+
+
+    <div class="buttons">
+   <button mat-button color="primary" (click)="edit(anime.id)">EDIT</button>
+      <button mat-button color="warn" (click)="delete(anime.id)"><span class="material-icons">
           delete_forever
           </span>
           </button>
-          <button mat-button (click)="return()">Return Main Screen</button>
-        </mat-list-item>
+          <button mat-button (click)="return()">Return Main Screen</button></div>
+
+             
       </div>
 
    <div *ngIf="!anime" class="error">

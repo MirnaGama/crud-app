@@ -1,11 +1,35 @@
-table {
+.detail-anime {
+  padding: 100px;
+}
+
+.title-anime {
+  text-indent: 30px;
+  font-size: 40px;
+}
+
+.info-anime-table {
+    padding-top: 50px;
     border-collapse: separate;
     border-spacing: 30px;
     font-size: 20px;
+    text-align: center;
 }
 
 th {
     color: rgb(129, 126, 126);
+}
+
+.image-anime {
+  float: left;
+}
+
+.buttons {
+  text-indent: 30px;
+  padding-top: 50px;
+}
+
+button {
+  font-size: 20px;
 }
 
 .error {
